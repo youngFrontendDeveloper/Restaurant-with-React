@@ -1,0 +1,48 @@
+.filter-controls {
+  width: 100%;
+  .flex-center-center();
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+  @media(min-width: @width-tablet) {
+    width: 600px;
+  }
+}
+
+.filter-controls__item {
+  padding: 6px 10px;
+  cursor: pointer;
+
+
+  &:hover {
+    color: rgb(129, 24, 24);
+
+  }
+}
+.filter-controls__item--active {
+    border-bottom: 1px solid @color-black;
+
+  }
+
+
+.filter-container {
+  .flex-center-start();
+  max-width: 890px;
+  flex-wrap: wrap;
+
+  @media(min-width: @width-desktop) {
+    max-width: 910px;
+  }
+}
+
+.filter-container__item {
+  width: 207px;
+  margin: 10px;
+  background-color:rgba(211, 15, 34, 1);
+
+}
+
+

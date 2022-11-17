@@ -1,0 +1,35 @@
+.link {
+  text-decoration: none;
+}
+
+.link--menu {
+  display: block;
+  // width: 100%;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  color: @color-white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+
+  &:hover {
+    color: #9BE86F;
+  }
+  &:active {
+    border-bottom: 1px solid #9BE86F;
+  }
+}
+
+.link--menu--active {
+  border-bottom: 1px solid #9BE86F;
+  &:hover {
+    color:@color-white;
+    cursor: default;
+  }
+}
+
+.link--grey {
+  color: #bdbdbd;
+}

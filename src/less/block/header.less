@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1e1e1e;
+  z-index: 100;
+  border-bottom: 1px solid @color-white;
+  box-sizing: border-box;
+  
+  @media screen and (min-width: @width-tablet) {
+    border-bottom: none;
+  }
+}
+
+.header__container {
+  align-items: center;
+}
+
+.header__logo {
+  @media screen and (min-width: @width-tablet) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: @width-desktop) {
+    margin-left: -15px;
+    
+  }
+}
+
+.header__nav {
+  
+  @media screen and (min-width: @width-desktop) {
+    margin-right: -15px;
+  }
+}
+ 

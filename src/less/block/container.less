@@ -1,0 +1,52 @@
+.container {
+  .flex-between-start();
+  flex-wrap: wrap;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  
+  @media (min-width: @width-tablet) {
+    .flex-around-center();
+    min-width: @width-tablet;
+  }
+  
+  @media (min-width: @width-desktop) {
+    .flex-between-start();
+    width: @width-desktop;
+  }
+}
+
+.container--width--center {
+  @media (min-width: @width-desktop) {
+    .flex-center-start();
+  }
+}
+
+.description--beer {
+  margin-top: 30px;
+  
+  @media (min-width: @width-tablet) {
+    margin-top: 65px;
+  }
+}
+
+.container__col {
+  min-width: 290px;
+  width: 100%;
+  margin-top: 50px;
+  
+  @media (min-width: @width-desktop) {
+    width: 45%;
+  }
+  
+  &:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
+
+.container__text {
+  margin-bottom: 18px;
+}

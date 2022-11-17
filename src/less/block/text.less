@@ -1,0 +1,92 @@
+.text {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: justify;
+  color: @color-dark;
+
+  @media (min-width: @width-tablet) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @width-desktop) {
+    font-size: 20px;
+  }
+}
+
+.text--primary {
+  width: 165px;
+  color: @color-white;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eeeeee;
+
+  
+  @media (min-width: @width-tablet) {
+    width: 250px;
+    padding-bottom: 20px;
+    font-size: 26px;
+  }
+
+  @media (min-width: @width-desktop) {
+    font-size: 30px;
+  }
+}
+
+.text--filter-controls {
+  width: fit-content;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.text--filter-container {
+  padding: 10px;
+  color: @color-white;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;  
+}
+
+.text--underlined {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(47, 46, 47);
+}
+
+.text--green {
+  color: #63C85D;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+
+  @media (min-width: @width-desktop) {
+    font-size: 33px;
+  }
+}
+
+.text--phone {
+  display: block;
+  font-size: 25px;
+  line-height: 1;
+  color: @color-white;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    color: #63C85D;
+  }
+}
+
+.text--footer {
+  color: @color-grey;
+  line-height: 23px;
+  text-align: center;
+
+}
